@@ -1,26 +1,28 @@
-#  Solidarity - Iot Device
+#  Solidarity - IoT Device
 
-Winning soultion for IBM's TechToProtect Challenege! IoT device for Emergency Responders. Built in conjunction with Web Application and Mobile Application. Click here for information https://github.com/techforthepeople
+Winning solution for IBM's TechToProtect Challenge - IoT device for Emergency Responders built in conjunction with web and mobile applications.
 
 ## Motivation
 
-The Tech to Protect coding hacakthon is designed to inspire participants to connect, collaborate, and create technologies of the future for public safety. Solidarity, provides an integrated, all in one platform for Emergency Responders to locate each other and detect when they are in danger. This repo contains code for our Iot Device.
+The Tech to Protect challenge is designed to inspire participants to connect, collaborate, and create technologies of the future for public safety. Solidarity provides an integrated platform for Emergency Responders to locate each other and detect when they are in danger. This repo contains code for our IoT Device.
 
 ## Functionality
 
-* Raspbery PI outfitted with sensor to detect elevations in temperature 
-* User will be alerted visual alert when temperatures rise 
-* User will be alerted auido alert when temperatures rise 
+* Raspberry PI outfitted with sensors that can be attached to clothing or equipment carried by emergency responses
+* Emergency responders will be alerted with visual (LED Matrix) and audio messages when sensor readings exceed safe thresholds
+* Sensor readings are uploaded to back-end where they can be monitored by the incident commander
 
 ## :hammer_and_pick: Built With
 
-* IMB's text to speach API
+* Raspberry Pi
+* Sense HAT
 * Python
+* IBM Watson Text-to-Speech API
 
 ## :writing_hand: Authors
 
 * Andrew O’Grady - [aogrady3](https://github.com/aogrady3)
-* Visnu Ravi - [vishnuravi](https://github.com/vishnuravi)
+* Vishnu Ravi - [vishnuravi](https://github.com/vishnuravi)
 * Vincent Tse - [Greashun](https://github.com/Greashun)
 * David P - [droza](https://github.com/droza)
 * Nayyif OUSSAMATOU - [bkkenzo](https://github.com/bkkenzo)
