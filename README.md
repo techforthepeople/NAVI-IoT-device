@@ -25,9 +25,6 @@ The Tech to Protect coding hacakthon is designed to inspire participants to conn
 * David P - [droza](https://github.com/droza)
 * Nayyif OUSSAMATOU - [bkkenzo](https://github.com/bkkenzo)
 
-## Screenshots
-
-
 ## :video_camera: Demo Presentation
 
 Watch our demo presentation below:
