@@ -1,4 +1,4 @@
-#  Solidarity - IoT Device
+#  Solidarity (NAVI) - IoT Device
 
 Winning solution for IBM's TechToProtect Challenge - IoT device for Emergency Responders built in conjunction with web and mobile applications.
 
