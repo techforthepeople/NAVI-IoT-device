@@ -32,9 +32,11 @@ while True:
     print("Data to POST to API: ", api_post_data)
 
     print("API response: ", response)
+
+    temp = 50
     
     if(temp > high_temp_threshold or temp < low_temp_threshold):
-        os.system('warning.mp3')
+        os.system('omxplayer warning.mp3')
         sense.show_message("HIGH", text_colour=[255,255,255], back_colour=[255,0,0])
     else:
         sense.show_message("OK", text_colour=[255,255,255], back_colour=[0,255,0])
