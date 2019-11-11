@@ -7,6 +7,7 @@ import os
 import sqlite3
 from sqlite3 import Error
 import requests
+import pygame
 
 sense = SenseHat()
 
@@ -54,7 +55,11 @@ def safe():
 
 
 def unsafe():
-    os.system('omxplayer warning.mp3')
+    sound_file = 'sounds/warning.mp3'
+    pygame.init()
+    pygame.mixer.init()
+    pygame.mixer.music.load(sound_file)
+    pygame.mixer.music.play()
     sense.show_message('UNSAFE', text_colour=[255, 255, 255], back_colour=[255, 0, 0])
 
 
