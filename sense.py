@@ -13,10 +13,7 @@ sense = SenseHat()
 
 # config
 db = 'sensor.db'
-api_url = 'api_url_goes_here'
-
-def sleep(x):
-    return time.sleep(x / 1000.0)
+api_url = 'https://solidarity-backend-030.onrender.com/sensors'
 
 # connect to database
 def create_connection(db):
@@ -77,12 +74,14 @@ def main():
 
             # format and send data to backend
             data = {
-                'authId': settings['userid'],
+                'userAuthId': settings['userid'],
                 'timeLogged': dt.now(),
                 'temp': temp,
                 'humidity': humidity,
                 'pressure': pressure
             }
+
+            print(data)
 
             try:
                 r = requests.post(api_url, data = data)
@@ -98,7 +97,7 @@ def main():
             else:
                 safe()
 
-            sleep(2000)
+            time.sleep(settings['polling_frequency'])
 
         else:
             print('Unable to retrieve alert settings.')
