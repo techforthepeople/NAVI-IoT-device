@@ -35,4 +35,4 @@ The Tech to Protect challenge is designed to inspire participants to connect, co
 
 Watch our demo presentation below:
 
-LINK TBD.
+https://www.youtube.com/watch?v=2gxkPN-a7gw&feature=youtu.be
