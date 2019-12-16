@@ -13,7 +13,7 @@ sense = SenseHat()
 
 # config
 db = 'sensor.db'
-api_url = 'https://solidarity-backend-030.onrender.com/sensors'
+api_url = ''
 
 # connect to database
 def create_connection(db):
@@ -59,8 +59,11 @@ def unsafe():
     pygame.mixer.music.play()
     sense.show_message('UNSAFE', text_colour=[255, 255, 255], back_colour=[255, 0, 0])
 
-
 def main():
+    while True:
+        unsafe()
+        time.sleep(2)
+
     settings = get_settings()
 
     if settings is not None:

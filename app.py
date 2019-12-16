@@ -1,14 +1,19 @@
 from flask import Flask, flash, render_template, request, redirect, session, url_for
 import uuid
 import sqlite3
+import json
 from sqlite3 import Error
 from marshmallow import Schema, fields
+from sense_hat import SenseHat
+import datetime
 
 app = Flask(__name__)
 
 app.config.from_object("config.DevelopmentConfig")
 
 db = app.config["DB_NAME"]
+
+sense = SenseHat()
 
 def create_connection(db):
     con = None
@@ -18,6 +23,22 @@ def create_connection(db):
         print(e)
 
     return con
+
+@app.route('/data')
+def get_sensor_data():
+    temp = sense.get_temperature()
+    humidity = sense.get_humidity()
+    pressure = sense.get_pressure()
+
+    data = {}
+    data['timestamp'] = str(datetime.datetime.now()) 
+    data['temp'] = temp
+    data['humidity'] = humidity
+    data['pressure'] = pressure
+    json_data = json.dumps(data)
+
+    return json_data
+
 
 @app.route('/')
 def index():
