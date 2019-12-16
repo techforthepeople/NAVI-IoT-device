@@ -13,7 +13,13 @@ The Tech to Protect challenge is designed to inspire participants to connect, co
 * Web interface allows adjustment of alert thresholds and other settings
 * Sensor readings are uploaded to backend API where they can be monitored by the incident commander
 
+## Examples
+
+### High temperature alert
 ![](https://media.giphy.com/media/mCz5qT0CNFXUNiVbq9/giphy.gif)
+
+### Configuring alert thresholds
+<img src="https://user-images.githubusercontent.com/1212163/68947284-13a65700-0783-11ea-9ffb-50f766aecb89.png" alt="alt text" width="200" height="400">
 
 ## :hammer_and_pick: Built With
 
